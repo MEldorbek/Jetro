@@ -1,8 +1,10 @@
 @import 'globals';
 @import 'fonts';
 .header {
+    &__logo {
+        margin: 22px 0 23px;
+    }
     &__inner {
-        height: 78px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -25,4 +27,62 @@
             }
         }
     }
+}
+
+.thumbs__item {
+    width: 140px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sliders {
+    background-color: rgba(232, 96, 60, 0.502);
+    height: 62px;
+    width: 100%;
+}
+
+.slider {
+    margin-bottom: 20px;
+    &__item {
+        min-height: 400px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fefefe;
+    }
+    &__text {
+        background-color: rgb(232, 102, 60);
+        opacity: 0.8;
+        width: 413px;
+        height: 124px;
+        margin-top: 245px;
+        margin-left: 28px;
+        padding: 19px 22px;
+        & p {
+            font-size: 12px;
+            font-family: 'HelveticaNeue', sans-serif;
+        }
+    }
+    &__title {
+        font-size: 18px;
+    }
+}
+
+.thumbs .slick-track {
+    transform: translate3d(0px, 0px, 0px) !important;
+    width: 940px !important;
+}
+
+.thumbs .slick-slide {
+    max-width: 140px;
+}
+
+.thumbs .slick-track div+div {
+    margin-left: 20px;
+}
+
+.slick-list {
+    padding: 0 0 !important;
 }
