@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 960px;
+    background-color: #fefefe;
+    padding: 0 10px;
+    margin: 0 auto;
+}
