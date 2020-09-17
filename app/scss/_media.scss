@@ -1,0 +1,111 @@
+@media(max-width: 960px) {
+    .thumbs {
+        display: none;
+    }
+}
+
+@media(max-width: 930px) {
+    .works {
+        &__inner {
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        &__item {
+            margin: 0 10% 20px;
+            text-align: start;
+        }
+    }
+}
+
+@media(max-width: 910px) {
+    .features {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 880px) {
+    .footer {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 45%;
+            margin-left: 20px;
+        }
+    }
+    .about {
+        width: 100%;
+    }
+}
+
+@media(max-width: 770px) {
+    .works__item {
+        margin: 0 5% 20px;
+    }
+}
+
+@media(max-width: 700px) {
+    .header__menu {
+        ul {
+            display: none;
+        }
+        &-btn {
+            display: block;
+        }
+        &>ul {
+            display: none;
+            position: absolute;
+            padding-inline-start: 0px;
+            top: 60px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 2;
+            background-color: #fff;
+            border-bottom: 5px solid #e8663c;
+        }
+        & li {
+            display: block;
+            text-align: center;
+            &+li {
+                margin-left: 0;
+                & a {
+                    border-top: 1px solid #f3af9d;
+                }
+            }
+            & a {
+                padding: 12px 0 12px 11px;
+                margin: 0 20px;
+                font-weight: 400;
+                display: block;
+                text-transform: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .footer__item {
+        width: 100%;
+    }
+}
+
+@media(max-width: 580px) {
+    .works__item {
+        margin: 0 auto 20px;
+    }
+}
+
+@media(min-width: 701px) {
+    .header__menu {
+        ul {
+            display: block !important;
+        }
+    }
+}
