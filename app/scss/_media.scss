@@ -102,6 +102,16 @@
     }
 }
 
+@media(max-width: 480px) {
+    .slider {
+        &__text {
+            width: auto;
+            margin-right: 28px;
+            margin-top: 235px;
+        }
+    }
+}
+
 @media(min-width: 701px) {
     .header__menu {
         ul {
